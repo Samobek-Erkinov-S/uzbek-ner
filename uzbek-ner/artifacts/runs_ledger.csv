@@ -1,5 +1,0 @@
-run,model,max_length,lr,epochs,eff_batch,seed,val_precision,val_recall,f1_5class,f1_place,f1_nodate,f1_core
-baseline,xlm-roberta-base,256,2e-05,4,16,42,0.675,0.74,0.706,0.7699,0.7277,0.797
-mbert,bert-base-multilingual-cased,384,2e-05,4,16,42,0.668,0.7299,0.6976,0.7584,0.7177,0.7838
-tahrirchi,tahrirchi/tahrirchi-bert-base,384,2e-05,4,16,42,0.6524,0.7135,0.6816,0.7434,0.7015,0.7688
-xlmr-large,xlm-roberta-large,384,2e-05,4,16,42,0.7042,0.7462,0.7246,0.7825,0.7463,0.8089
