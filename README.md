@@ -19,21 +19,16 @@ annotation layer, then training and comparing models on it:
   noise keys and a near-empty decoy field; the five chosen classes cover 88.3% of
   all annotations.
 - **BIO conversion** — a deterministic converter with apostrophe normalization,
-  agglutinative-suffix matching, and priority-based conflict resolution; 19,609 rows,
-  0 BIO violations, verified three independent ways (match-rate audit, absence audit,
-  byte-level re-verification of the saved artifact).
+  agglutinative-suffix matching, and priority-based conflict resolution;
 - **Controlled comparison** — four pretrained models (XLM-R-large/base, mBERT,
   TahrirchiBERT) under identical splits, seed, and recipe, each with a per-tokenizer
   `max_length` audit for fairness.
-- **Decomposition** — the ~9-point gap between the headline (0.71) and the core (0.80)
-  is measured and attributed to two documented annotation pathologies, shown to be
-  architecture-independent across all four models.
 
 Full analysis, every number, and all design decisions: **REPORT.md**.
 
 ## Repository layout
 
-- `REPORT.md` — the complete write-up (also `NER_Task_Report.pdf`).
+- `REPORT.md` — the complete write-up.
 - `notebooks/` — one notebook per phase, in order, with outputs preserved:
   - `1_2_explore_and_convert.ipynb` — data forensics, label reconciliation, BIO conversion
   - `3_4_split_tokenize_align.ipynb` — 80/10/10 split, tokenization, label alignment
